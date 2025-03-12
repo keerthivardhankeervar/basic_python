@@ -1,0 +1,14 @@
+# missing number program 
+
+def find_missing(arr, n):
+    return (n * (n + 1)) // 2 - sum(arr)
+
+n = int(input("Enter n: "))
+
+arr = []
+print("Enter the numbers:")
+for _ in range(n - 1):
+    arr.append(int(input()))
+
+print("Missing number:", find_missing(arr, n))
+
